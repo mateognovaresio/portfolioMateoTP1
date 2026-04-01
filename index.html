@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mateo Novaresio — Portfolio</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+
+    <nav>
+        <a href="#sobreMi">Sobre mí</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="trayectoria.html">Trayectoria</a>
+        <a href="#contacto">Contacto</a>
+        <button class="botonTema" id="botonTema" onclick="cambiarTema()">☀️ Modo claro</button>
+    </nav>
+
+    <main>
+
+        <header class="hero">
+            <h1>Mateo <span>Novaresio</span></h1>
+            <p class="descripcion">Arduino · C++ · Python · HTML/CSS · SQL</p>
+            <a href="#proyectos" class="boton botonPrimario">Ver proyectos</a>
+            <a href="#contacto" class="boton botonSecundario">Contactar</a>
+        </header>
+
+        <section id="sobreMi">
+            <h2>Sobre mí</h2>
+            <div class="linea"></div>
+            <div class="sobreMiGrid">
+                <div class="sobreMiFoto">
+                    <img src="img/mateo.JPG" alt="Foto de Mateo Novaresio" />
+                </div>
+                <div class="sobreMiTexto">
+                    <h3>Hola, soy <span>Mateo</span> 👋</h3>
+                    <p>Estudiante de Ingeniería en Sistemas de Información con base en Electrónica. Me muevo cómodamente entre el desarrollo de software, el soporte IT y la gestión técnica.</p>
+                    <p>Creo que la mejor manera de aprender es construyendo cosas reales que resuelvan problemas reales.</p>
+                    <div class="estadisticas">
+                        <div class="estadistica">
+                            <strong>5</strong>
+                            <span>Tecnologías</span>
+                        </div>
+                        <div class="estadistica">
+                            <strong>12+</strong>
+                            <span>Proyectos</span>
+                        </div>
+                        <div class="estadistica">
+                            <strong>10+</strong>
+                            <span>Café por día</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="fondoAlt">
+            <section id="habilidades">
+                <h2>Habilidades</h2>
+                <div class="linea"></div>
+                <div class="gridSkills">
+                    <div class="cartaSkill">
+                        <div class="icono">⚡</div>
+                        <h3>Arduino</h3>
+                        <p>Sensores, actuadores y comunicación serial.</p>
+                    </div>
+                    <div class="cartaSkill">
+                        <div class="icono">⚙️</div>
+                        <h3>C++</h3>
+                        <p>Programación orientada a objetos y memoria dinámica.</p>
+                    </div>
+                    <div class="cartaSkill">
+                        <div class="icono">🐍</div>
+                        <h3>Python</h3>
+                        <p>Automatización, análisis de datos y visualizaciones.</p>
+                    </div>
+                    <div class="cartaSkill">
+                        <div class="icono">🌐</div>
+                        <h3>HTML5 / CSS3</h3>
+                        <p>Estructura semántica, diseño responsive y animaciones.</p>
+                    </div>
+                    <div class="cartaSkill">
+                        <div class="icono">🗄️</div>
+                        <h3>SQL</h3>
+                        <p>Bases de datos relacionales y consultas JOIN.</p>
+                    </div>
+                    <div class="cartaSkill">
+                        <div class="icono">📦</div>
+                        <h3>Git</h3>
+                        <p>Control de versiones y trabajo en equipo.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <div class="linea"></div>
+            <div class="gridProyectos">
+                <article class="cartaProyecto">
+                    <img src="img/proyecto1.png" alt="Proyecto Air" />
+                    <div class="contenidoProyecto">
+                        <h3>Air — Transporte seguro</h3>
+                        <p>Sistema experto en Prolog que analiza variables del conductor para calcular niveles de riesgo y generar recomendaciones automáticas.</p>
+                    </div>
+                </article>
+                <article class="cartaProyecto">
+                    <img src="img/proyecto2.png" alt="E-Com Insights Pro" />
+                    <div class="contenidoProyecto">
+                        <h3>E-Com Insights Pro</h3>
+                        <p>Plataforma de inteligencia de negocios para comercio electrónico. Centraliza datos para optimizar precios e inventario.</p>
+                    </div>
+                </article>
+                <article class="cartaProyecto">
+                    <img src="img/proyecto3.png" alt="Turnify" />
+                    <div class="contenidoProyecto">
+                        <h3>Turnify — Gestión de turnos</h3>
+                        <p>Sistema web para gestionar turnos con registro de usuarios y validación de disponibilidad en tiempo real.</p>
+                    </div>
+                </article>
+                <article class="cartaProyecto">
+                    <img src="img/proyecto4.png" alt="DataView" />
+                    <div class="contenidoProyecto">
+                        <h3>DataView — Análisis y visualización</h3>
+                        <p>Aplicación en Python que procesa datos de distintas fuentes generando visualizaciones para la toma de decisiones.</p>
+                    </div>
+                </article>
+                <article class="cartaProyecto">
+                    <img src="img/proyecto5.png" alt="DevPortfolio" />
+                    <div class="contenidoProyecto">
+                        <h3>DevPortfolio — Portfolio personal</h3>
+                        <p>Portfolio web responsive con modo claro/oscuro y animaciones en HTML, CSS y JavaScript.</p>
+                    </div>
+                </article>
+                <article class="cartaProyecto">
+                    <img src="img/proyecto6.png" alt="SmartSensor" />
+                    <div class="contenidoProyecto">
+                        <h3>SmartSensor — Monitoreo con Arduino</h3>
+                        <p>Sistema para lectura de sensores en tiempo real integrando hardware y software.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <div class="fondoAlt">
+            <section id="contacto">
+                <h2>Contacto</h2>
+                <div class="linea"></div>
+                <p class="introContacto">Si tenés alguna pregunta o querés trabajar juntos, no dudes en contactarme.</p>
+                <form action="https://formspree.io/f/myknvwpz" method="POST">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre..." required />
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Contame tu idea..." required></textarea>
+                    <button type="submit" class="botonEnviar">✉ Enviar mensaje</button>
+                </form>
+            </section>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Mateo Novaresio</p>
+        <p>Arduino · C++ · Python · HTML/CSS · SQL</p>
+        <a href="https://github.com/mateognovaresio" target="_blank" class="botonGitHub">🐙 GitHub</a>
+        <p style="font-size:12px; margin-top:10px;">Hecho con HTML, CSS y mucho mate.</p>
+    </footer>
+
+    <script>
+        var botonTema = document.getElementById("botonTema");
+        if (localStorage.getItem("tema") === "claro") {
+            document.body.classList.add("claro");
+            botonTema.textContent = "🌙 Modo oscuro";
+        }
+        function cambiarTema() {
+            document.body.classList.toggle("claro");
+            var claro = document.body.classList.contains("claro");
+            botonTema.textContent = claro ? "🌙 Modo oscuro" : "☀️ Modo claro";
+            localStorage.setItem("tema", claro ? "claro" : "oscuro");
+        }
+    </script>
+
+</body>
+</html>

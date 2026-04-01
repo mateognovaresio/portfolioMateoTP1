@@ -1,0 +1,97 @@
+#trayectoria {
+    padding: 50px 20px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#experiencia {
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+/* lineatemporal */
+.timeline {
+    padding: 10px 0 10px 36px;
+    border-left: 2px solid var(--borde);
+}
+
+.timeline-item {
+    margin-bottom: 40px;
+}
+
+
+/* año */
+.timeline-anio {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--cian);
+    border: 1px solid var(--cian);
+    background-color: var(--fondo);
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+
+/* contenido */
+.timeline-contenido {
+    background-color: var(--fondoTarjeta);
+    border: 1px solid var(--borde);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.timeline-contenido:hover {
+    border-color: var(--cian);
+}
+
+.timeline-icono {
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.timeline-contenido h3 {
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+.timeline-lugar {
+    font-size: 12px;
+    color: var(--cian);
+    margin-bottom: 8px;
+}
+
+.timeline-contenido p {
+    color: var(--gris);
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+
+/* tags */
+.timeline-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 12px;
+}
+
+.tag {
+    background-color: var(--fondoAlt);
+    border: 1px solid var(--borde);
+    color: var(--gris);
+    font-size: 11px;
+    padding: 3px 8px;
+    border-radius: 4px;
+}
+
+
+/* responsividad */
+@media (max-width: 680px) {
+    .timeline {
+        padding-left: 20px;
+    }
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trayectoria — Mateo Novaresio</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/trayectoria.css" />
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="index.html#sobreMi">Sobre mí</a>
+        <a href="index.html#habilidades">Habilidades</a>
+        <a href="index.html#proyectos">Proyectos</a>
+        <a href="trayectoria.html" class="activo">Trayectoria</a>
+        <a href="index.html#contacto">Contacto</a>
+        <button class="botonTema" id="botonTema" onclick="cambiarTema()">☀️ Modo claro</button>
+    </nav>
+
+    <main>
+
+        <header class="hero">
+            <h1>Mi <span>Trayectoria</span></h1>
+            <p class="descripcion">Del primer LED parpadeando hasta acá</p>
+        </header>
+
+        <section id="experiencia">
+            <h2>Experiencia</h2>
+            <div class="linea"></div>
+            <div class="gridExperiencia">
+
+                <article class="cartaExperiencia">
+                    <div class="icono">🖥️</div>
+                    <h3>Soporte IT — TechSoluciones S.A.</h3>
+                    <p class="expFecha">2023 — Actualidad</p>
+                    <p>Mantenimiento de equipos, soporte técnico a usuarios y administración de redes locales. Resolución de incidentes de hardware y software en entornos corporativos.</p>
+                </article>
+
+                <article class="cartaExperiencia">
+                    <div class="icono">🐍</div>
+                    <h3>Desarrollador freelance — Automatización</h3>
+                    <p class="expFecha">2022 — 2023</p>
+                    <p>Desarrollo de scripts en Python para automatización de procesos y reportes de datos. Integración con APIs externas y bases de datos SQL.</p>
+                </article>
+
+            </div>
+        </section>
+
+        <div class="fondoAlt">
+            <section id="trayectoria">
+                <h2>Línea de tiempo</h2>
+                <div class="linea"></div>
+
+                <div class="timeline">
+
+                    <div class="timeline-item">
+                        <div class="timeline-anio">2019</div>
+                        <div class="timeline-contenido">
+                            <div class="timeline-icono">⚙️</div>
+                            <h3>Los primeros pasos: C++</h3>
+                            <p class="timeline-lugar">Tecnicatura en Electrónica</p>
+                            <p>Todo empezó acá. Aprendí cómo funciona una computadora por dentro: memoria, punteros, tipos de datos y estructuras de control. Entender que el código era una forma de hablarle al hardware me enganchó desde el primer día.</p>
+                            <div class="timeline-tags">
+                                <span class="tag">C++</span>
+                                <span class="tag">Programación estructurada</span>
+                                <span class="tag">Lógica</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-anio">2020</div>
+                        <div class="timeline-contenido">
+                            <div class="timeline-icono">⚡</div>
+                            <h3>El mundo físico: Arduino</h3>
+                            <p class="timeline-lugar">Tecnicatura en Electrónica</p>
+                            <p>Di mis primeros pasos con Arduino y microcontroladores. Ver que podía escribir código y que algo en el mundo real respondía —un LED, un motor, un sensor— cambió mi forma de ver la programación.</p>
+                            <div class="timeline-tags">
+                                <span class="tag">Arduino</span>
+                                <span class="tag">Microcontroladores</span>
+                                <span class="tag">Sensores</span>
+                                <span class="tag">C++</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-anio">2024</div>
+                        <div class="timeline-contenido">
+                            <div class="timeline-icono">🎓</div>
+                            <h3>La UTN y bases más sólidas</h3>
+                            <p class="timeline-lugar">Universidad Tecnológica Nacional</p>
+                            <p>Ingresar a la UTN fue volver a los fundamentos con otra madurez. Reafirmé mis conocimientos con un enfoque académico: estructuras de datos, complejidad algorítmica y buenas prácticas de código.</p>
+                            <div class="timeline-tags">
+                                <span class="tag">C++</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">Algoritmos</span>
+                                <span class="tag">UTN</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-anio">Hoy</div>
+                        <div class="timeline-contenido">
+                            <div class="timeline-icono">🌐</div>
+                            <h3>El salto a la web: HTML y CSS</h3>
+                            <p class="timeline-lugar">Cátedra Desarrollo de Software — UTN</p>
+                            <p>Hoy aprendo desarrollo web en la cátedra de Desarrollo de Software. HTML y CSS están cerrando el círculo: ahora puedo construir interfaces que las personas realmente ven y usan. Este portfolio es el resultado.</p>
+                            <div class="timeline-tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">Desarrollo Web</span>
+                                <span class="tag">UTN</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Mateo Novaresio</p>
+        <p>Arduino · C++ · Python · HTML/CSS · SQL</p>
+        <a href="https://github.com/mateognovaresio" target="_blank" class="botonGitHub">🐙 GitHub</a>
+        <p style="font-size:12px; margin-top:10px;">Hecho con HTML, CSS y mucho café ☕</p>
+    </footer>
+
+    <script>
+        var botonTema = document.getElementById("botonTema");
+        if (localStorage.getItem("tema") === "claro") {
+            document.body.classList.add("claro");
+            botonTema.textContent = "🌙 Modo oscuro";
+        }
+        function cambiarTema() {
+            document.body.classList.toggle("claro");
+            var claro = document.body.classList.contains("claro");
+            botonTema.textContent = claro ? "🌙 Modo oscuro" : "☀️ Modo claro";
+            localStorage.setItem("tema", claro ? "claro" : "oscuro");
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --fondo: #020510;
+    --fondoNav: #050d1f;
+    --fondoAlt: #050d1f;
+    --fondoTarjeta: #0a1628;
+    --cian: #06b6d4;
+    --azul: #2563eb;
+    --texto: #e0eaff;
+    --gris: #7aa2d4;
+    --borde: #1a3a6e;
+}
+
+body.claro {
+    --fondo: #f0f4ff;
+    --fondoNav: #ffffff;
+    --fondoAlt: #e4ecff;
+    --fondoTarjeta: #ffffff;
+    --cian: #0891b2;
+    --azul: #1d4ed8;
+    --texto: #0f172a;
+    --gris: #334155;
+    --borde: #cbd5e1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--fondo);
+    color: var(--texto);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* NAV */
+nav {
+    background-color: var(--fondoNav);
+    border-bottom: 1px solid var(--borde);
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: var(--gris);
+    text-decoration: none;
+    font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+nav a:hover, nav a.activo {
+    color: var(--cian);
+}
+
+.botonTema {
+    position: absolute;
+    right: 20px;
+    background: var(--fondoTarjeta);
+    border: 1px solid var(--borde);
+    color: var(--gris);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.botonTema:hover {
+    color: var(--cian);
+}
+
+
+/* SECCIONES */
+section {
+    padding: 60px 20px;
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+.fondoAlt {
+    background-color: var(--fondoAlt);
+}
+
+h2 {
+    color: var(--cian);
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.linea {
+    width: 40px;
+    height: 2px;
+    background-color: var(--cian);
+    margin: 0 auto 40px;
+}
+
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 100px 20px 80px;
+    background-color: var(--fondoAlt);
+    max-width: 100%;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero h1 span { color: var(--cian); }
+
+.hero .descripcion {
+    color: var(--gris);
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+
+/* BOTONES */
+.boton, .botonGitHub, .botonEnviar {
+    display: inline-block;
+    padding: 10px 26px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.botonPrimario, .botonEnviar {
+    background-color: var(--cian);
+    color: #fff;
+    margin: 5px;
+}
+
+.botonPrimario:hover, .botonEnviar:hover { background-color: var(--azul); }
+
+.botonSecundario, .botonGitHub {
+    border: 2px solid var(--cian);
+    color: var(--cian);
+    background: transparent;
+    margin: 5px;
+}
+
+.botonSecundario:hover, .botonGitHub:hover {
+    background-color: var(--cian);
+    color: #fff;
+}
+
+.botonGitHub { margin-top: 8px; }
+.botonEnviar { align-self: flex-start; }
+
+
+/* sobremi */
+.sobreMiGrid {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sobreMiFoto img {
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--azul);
+}
+
+.sobreMiTexto {
+    flex: 1;
+    min-width: 240px;
+}
+
+.sobreMiTexto h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.sobreMiTexto h3 span { color: var(--cian); }
+
+.sobreMiTexto p {
+    color: var(--gris);
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+.estadisticas {
+    display: flex;
+    margin-top: 20px;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+.estadistica strong {
+    display: block;
+    font-size: 26px;
+    color: var(--cian);
+}
+
+.estadistica span {
+    font-size: 11px;
+    color: var(--gris);
+    text-transform: uppercase;
+}
+
+
+/* tarjet */
+.cartaSkill, .cartaProyecto, .cartaExperiencia {
+    background-color: var(--fondoTarjeta);
+    border: 1px solid var(--borde);
+    border-radius: 8px;
+}
+
+.cartaSkill:hover, .cartaProyecto:hover, .cartaExperiencia:hover {
+    border-color: var(--cian);
+}
+
+.cartaSkill {
+    padding: 20px;
+}
+
+.cartaSkill .icono, .cartaExperiencia .icono {
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.cartaSkill h3 {
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.cartaSkill p, .cartaExperiencia p, .contenidoProyecto p {
+    color: var(--gris);
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.cartaProyecto { overflow: hidden; }
+
+.cartaProyecto img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.contenidoProyecto { padding: 16px; }
+
+.contenidoProyecto h3 {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.cartaExperiencia {
+    padding: 24px;
+}
+
+.cartaExperiencia h3 {
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+.expFecha {
+    font-size: 12px;
+    color: var(--cian);
+    margin-bottom: 10px;
+}
+
+
+/* grids */
+.gridSkills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.gridProyectos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.gridExperiencia {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+
+/* contacto */
+.introContacto {
+    color: var(--gris);
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+form label {
+    color: var(--gris);
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+form input, form textarea {
+    background-color: var(--fondoTarjeta);
+    border: 1px solid var(--borde);
+    border-radius: 6px;
+    color: var(--texto);
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    padding: 10px 14px;
+    outline: none;
+}
+
+form input:focus, form textarea:focus { border-color: var(--cian); }
+
+form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+
+/* pie de pag */
+footer {
+    background-color: var(--fondoNav);
+    border-top: 1px solid var(--borde);
+    text-align: center;
+    padding: 28px 20px;
+    color: var(--gris);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+
+/* responsive */
+@media (max-width: 700px) {
+    .hero h1 { font-size: 32px; }
+
+    .gridSkills, .gridProyectos, .gridExperiencia {
+        grid-template-columns: 1fr;
+    }
+
+    .sobreMiGrid {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .estadisticas { justify-content: center; }
+
+    nav { flex-wrap: wrap; justify-content: center; }
+
+    nav a { font-size: 12px; padding: 4px 8px; }
+
+    .botonTema { display: none; }
+}
